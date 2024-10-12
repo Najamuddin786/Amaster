@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q7</title>
+</head>
+<body>
+    <input type="text" placeholder="Enter Your Text" id="input">
+    <p id="p"></p>
+    <button onclick="calculateLength()">Go</button>
+    
+</body>
+<script>
+    function calculateLength(){
+        let input=document.getElementById('input').value
+        let p=document.getElementById('p')
+        if(input==false){
+            alert("Please Enter Your Text")
+        }
+        let f=input.trim()
+        p.innerText=f.length
+        
+
+    }
+
+
+</script>
+</html>
